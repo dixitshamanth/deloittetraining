@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>javascript demo
+<meta charset="ISO-8859-1">
+<title>Javascript demo</title>
+</head>
+<script>
+function display()
+{
+	alert("Proceeding");
+	var result=confirm("Are you sure?");
+	if(result==true)
+		{
+		var name=prompt("What is your name?","Arun");
+		alert("Welcome:"+name);
+		}
+	else
+		alert("Exit")
+	}
+</script>
+<body>
+Hello
+<input type="button" value="go" onClick="display()">
+</body>
+</html>

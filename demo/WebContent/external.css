@@ -1,0 +1,28 @@
+h1.guest
+ {
+color:blue;
+text-transform:uppercase;
+background-color:silver;
+}
+h1.premium
+ {
+color:aqua;
+text-transform:lowercase;
+background-color:orange;
+}
+body {
+background:aqua url('oracle-java-7.png') no-repeat right top;
+}
+
+table
+{
+border: 1px solid black;
+background-color:silver;
+width:100%;
+height:50%;
+vertical-align:bottom;
+padding:5px;
+}
+
+a
+{color:red}

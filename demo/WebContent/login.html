@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validate(){
+	var usern=document.getElementById("username").value;
+	var pwd=document.getElementById("password").value;
+	var errUsername=document.getElementById("errUsername");
+	var errPassword=document.getElementById("errPassword");
+
+	
+	if(usern.length==0){
+		errUsername.innerHTML="<font color=red>Please enter username</font>";
+		return false;
+	}
+	
+	else if(pwd.length==0){
+		errUsername.innerHTML="";
+		errPassword.innerHTML="<font color=red>Please enter Password</font>";
+		return false;
+
+	}
+	
+	else if(pwd.length<6)
+	{
+		errUsername.innerHTML="";
+		errPassword.innerHTML="<font color=red>Password must be atleast 6 characters</font>";
+		return false;
+
+	}
+	else{
+		errUsername.innerHTML="";
+		errPassword.innerHTML="<font color=red>Valid password</font>";
+
+	}
+	
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body bgcolor="black" text="white">
+<center>
+<b> 
+<font face="Arial" size="20" color="white">Deloitte</font>
+<font face="Times New Roman" size="20" color="lime">.</font>
+<br/><i>
+<font face="Times New Roman" size="4">Hello, Please provide login info</font></i>
+</b>
+<br/>
+
+
+</center>
+
+<form action="emailvalidated.html" onsubmit="return validate()">
+<table cellspacing="10" cellpadding="10" align="center">
+<tr><td>Username</td><td> <input type="text" id="username" name ="username"> </td>
+<td><span id="errUsername"></span></td>
+</tr>
+<tr><td>Password</td><td> <input type="password" id="password" name ="password"> </td>
+<td><span id="errPassword"></span></td>
+</tr>
+
+<tr><td align="center"><input type="submit" value="Login"></td><td align="center"><input type="reset"></td></tr>
+</table>
+</form>
+<centre>
+<input type="button" value="go" onClick="validate()">
+</centre>
+</body>
+</html>
+

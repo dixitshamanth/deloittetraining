@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript">
+function addNumbers(){
+    var num1 = document.getElementById("num1").value;
+    document.forms[0].num2.value = 2*parseInt(num1);
+    document.forms[0].num3.value = parseInt(num1.value) +document.forms[0].num2.value;
+}
+</script>
+</head>
+<body>
+<form>
+First Number : <input type="text" id="num1" ><br/>
+Second Number :<input type="text" id="num2" >
+Result :<input type="text" id="num3" onfocus="addNumbers()"><br/>
+</form>
+</body>
+</html>
